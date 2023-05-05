@@ -30,3 +30,22 @@ switch(empcheck1){
 }
 let empwage=emphrs*WagePerHour;
 console.log("Total wage:"+empwage);
+
+//UC3-Refactor code to write fuction for daily working hours
+console.log("UC3 OUTPUT");
+
+function GetWorkingHours(empcheck3){
+    switch(empcheck3){
+        case IsFullTime:
+            return FullTimeHour;
+        case IsPartTime:
+             return PartTimeHour;
+        default:
+             return 0;         
+    }    
+}
+let emphrs3=0;
+let empcheck3=Math.floor(Math.random()*10%2);
+emphrs3=GetWorkingHours(empcheck3);
+let empwage3=emphrs3*WagePerHour;
+console.log("Total Wage:"+empwage3);
