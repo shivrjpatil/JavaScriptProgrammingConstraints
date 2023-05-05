@@ -49,3 +49,14 @@ let empcheck3=Math.floor(Math.random()*10%2);
 emphrs3=GetWorkingHours(empcheck3);
 let empwage3=emphrs3*WagePerHour;
 console.log("Total Wage:"+empwage3);
+
+//UC4-Calculating Wages For Month
+console.log("UC4 OUTPUT");
+const NumOfWorkingDays=2;
+let emphrs4=0;
+for(let day=0;day<NumOfWorkingDays;day++){
+    let empcheck4=Math.floor(Math.random()*10%2);
+    emphrs4 += GetWorkingHours(empcheck4);    
+}
+let empwage4=emphrs4*WagePerHour;
+console.log("Total hrs"+emphrs4+ "Emp Wage" +empwage4);
